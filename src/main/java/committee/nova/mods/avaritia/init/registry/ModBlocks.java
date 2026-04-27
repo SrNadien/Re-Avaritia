@@ -111,20 +111,7 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(1000F, 3600000.0F)
                     .isValidSpawn((state, level, pos, value) -> false)), false);
-    public static DeferredBlock<Block> fake_end_portal_frame = itemBlock("fake_end_portal_frame", ()-> new EndPortalFrameBlock(
-            BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.COLOR_GREEN)
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .sound(SoundType.GLASS)
-                    .lightLevel((blockState) -> 1)
-                    .strength(400F, 3600000.0F)), false);
-    public static DeferredBlock<Block> fake_end_portal = itemBlock("fake_end_portal", () -> new EndPortalBlock(
-            BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.COLOR_BLACK)
-                    .noCollission()
-                    .lightLevel((state) -> 15)
-                    .strength(400F, 3600000.0F)
-                    .pushReaction(PushReaction.BLOCK)), false);
+    
 
 
     private static DeferredBlock<Block> baseBlock(String name, Supplier<Block> block) {
