@@ -46,8 +46,7 @@ public class ModBlockTags extends IntrinsicHolderTagsProvider<Block> {
                 ModBlocks.neutron_compressor.get(), ModBlocks.dense_neutron_compressor.get(), ModBlocks.denser_neutron_compressor.get(), ModBlocks.densest_neutron_compressor.get(),
                 ModBlocks.extreme_anvil.get(),
                 ModBlocks.infinity_chest.get(), ModBlocks.extreme_smithing_table.get(),
-                Blocks.BEDROCK, Blocks.END_PORTAL_FRAME, Blocks.END_PORTAL,
-                ModBlocks.fake_bedrock.get(), ModBlocks.fake_end_portal_frame.get(), ModBlocks.fake_end_portal.get()
+                Blocks.BEDROCK, Blocks.END_PORTAL_FRAME
         );
         tag(BlockTags.MINEABLE_WITH_AXE).add(ModBlocks.compressed_chest.get());
         tag(BlockTags.MINEABLE_WITH_SHOVEL).add(ModBlocks.endless_cake.get(), ModBlocks.soul_farmland.get());
